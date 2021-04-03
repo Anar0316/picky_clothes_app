@@ -63,7 +63,7 @@ void _onItemTapped(int index) {
 
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
-          type: BottomNavigationBarType.shifting,//new
+          type: BottomNavigationBarType.fixed,//new
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
               icon: Icon(Icons.crop_original),
