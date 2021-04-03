@@ -7,10 +7,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Picky Clothes',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
-        ),
-        home: HomePage());
+      title: 'Picky Clothes',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: HomePage(),
+
+     // routes: <String, WidgetBuilder>{
+      //  '/Album': (context) => Album(),
+      //  '/Store': (context) => Store(),
+      //  '/Me': (context) => Me(),
+
+    );
   }
 }
