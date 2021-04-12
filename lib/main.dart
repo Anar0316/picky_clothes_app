@@ -1,23 +1,22 @@
-import 'package:picky_clothes_app/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_auth/constants.dart';
+
+import 'Welcome_screen.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Picky Clothes',
+      debugShowCheckedModeBanner: false,
+      title: 'Picky CLothes',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.blue,
+        scaffoldBackgroundColor: Colors.white,
       ),
-      home: HomePage(),
-
-     // routes: <String, WidgetBuilder>{
-      //  '/Album': (context) => Album(),
-      //  '/Store': (context) => Store(),
-      //  '/Me': (context) => Me(),
-
+      home: WelcomeScreen(),
     );
   }
 }
