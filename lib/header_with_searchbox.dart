@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
 import 'constants.dart';
-
 
 class HeaderWithSearchBox extends StatelessWidget {
   const HeaderWithSearchBox({
@@ -37,12 +35,12 @@ class HeaderWithSearchBox extends StatelessWidget {
             child: Row(
               children: <Widget>[
                 Text(
-                  'Picky Clothes',
+                  'Welcome to PickyClothes!',
                   style: Theme.of(context).textTheme.headline5.copyWith(
                       color: Colors.white, fontWeight: FontWeight.bold),
                 ),
                 Spacer(),
-                Image.asset("assets/images/logo.jpg")
+                Image.asset("assets/images/logo.png")
               ],
             ),
           ),

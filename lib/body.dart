@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:picky_clothes_app/recommend.dart';
-import 'package:picky_clothes_app/title_with_more_bbtn.dart';
-
-import 'constants.dart';
-import 'featurred.dart';
-import 'header_with_search_box.dart';
-
+import 'package:picky_clothes_app/Sweater.dart';
+import 'Cashmere.dart';
+import 'Leather.dart';
+import 'Pants.dart';
+import 'header_with_searchbox.dart';
+import 'title_with_more_bbtn.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -18,11 +17,14 @@ class Body extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           HeaderWithSearchBox(size: size),
-          TitleWithMoreBtn(title: "Recomended", press: () {}),
-          RecomendsPlants(),
-          TitleWithMoreBtn(title: "Featured Plants", press: () {}),
-          FeaturedPlants(),
-          SizedBox(height: kDefaultPadding),
+          TitleWithMoreBtn(title: "Sweater", press: () {}),
+          Sweater(),
+          TitleWithMoreBtn(title: "Leather", press: () {}),
+          Leather(),
+          TitleWithMoreBtn(title: "Pants", press: () {}),
+          Pants(),
+          TitleWithMoreBtn(title: "Cashmere", press: () {}),
+          Cashmere(),
         ],
       ),
     );

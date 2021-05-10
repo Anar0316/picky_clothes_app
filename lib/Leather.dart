@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-
 import 'constants.dart';
 import 'detail_screen.dart';
 
-
-
-class RecomendsPlants extends StatelessWidget {
-  const RecomendsPlants({
+class Leather extends StatelessWidget {
+  const Leather({
     Key key,
   }) : super(key: key);
 
@@ -16,26 +13,13 @@ class RecomendsPlants extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: <Widget>[
-          RecomendPlantCard(
-            image: "assets/images/pic-1.jpg",
+          ClothesCard(
             title: "How to clean the material",
             press: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                builder: (context) => DetailsScreen(),
-                ),
-              );
-            },
-          ),
-          RecomendPlantCard(
-            image: "assets/images/pic-2.png",
-            title: "Pick right product",
-            press: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-               builder: (context) => DetailsScreen(),
+                  builder: (context) => DetailsScreen(),
                 ),
               );
             },
@@ -46,18 +30,15 @@ class RecomendsPlants extends StatelessWidget {
   }
 }
 
-class RecomendPlantCard extends StatelessWidget {
-  const RecomendPlantCard({
+class ClothesCard extends StatelessWidget {
+  const ClothesCard({
     Key key,
-    this.image,
+    //  this.image,
     this.title,
-    this.country,
-    this.price,
     this.press,
   }) : super(key: key);
 
-  final String image, title, country;
-  final int price;
+  final String title;
   final Function press;
 
   @override
@@ -72,7 +53,6 @@ class RecomendPlantCard extends StatelessWidget {
       width: size.width * 0.4,
       child: Column(
         children: <Widget>[
-          Image.asset(image),
           GestureDetector(
             onTap: press,
             child: Container(
@@ -99,23 +79,10 @@ class RecomendPlantCard extends StatelessWidget {
                         TextSpan(
                             text: "$title\n".toUpperCase(),
                             style: Theme.of(context).textTheme.button),
-                        TextSpan(
-                          text: "$country".toUpperCase(),
-                          style: TextStyle(
-                            color: kPrimaryColor.withOpacity(0.5),
-                          ),
-                        ),
                       ],
                     ),
                   ),
                   Spacer(),
-                  Text(
-                    '\$$price',
-                    style: Theme.of(context)
-                        .textTheme
-                        .button
-                        .copyWith(color: kPrimaryColor),
-                  )
                 ],
               ),
             ),
