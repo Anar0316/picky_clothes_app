@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:picky_clothes_app/Sweater.dart';
-import 'Cashmere.dart';
-import 'Leather.dart';
-import 'Pants.dart';
-import 'header_with_searchbox.dart';
-import 'title_with_more_bbtn.dart';
+import 'file:///D:/Anar/picky_clothes_app/lib/Pages/Sweater.dart';
+import 'Pages/Cashmere.dart';
+import 'Pages/Leather.dart';
+import 'Pages/Pants.dart';
+import 'Components/header_with_searchbox.dart';
+import 'Components/title_with_more_bbtn.dart';
 
 class Body extends StatelessWidget {
   @override

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'constants.dart';
-import 'detail_screen.dart';
+import '../constants.dart';
+import '../Components/detail_screen.dart';
 
 class Pants extends StatelessWidget {
   const Pants({

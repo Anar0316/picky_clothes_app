@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'constants.dart';
-import 'detail_screen.dart';
+import '../constants.dart';
+import '../Components/detail_screen.dart';
 
-class Cashmere extends StatelessWidget {
-  const Cashmere({
+class Sweater extends StatelessWidget {
+  const Sweater({
     Key key,
   }) : super(key: key);
 
@@ -30,10 +30,10 @@ class Cashmere extends StatelessWidget {
   }
 }
 
-class  ClothesCard extends StatelessWidget {
-  const  ClothesCard({
+class ClothesCard extends StatelessWidget {
+  const ClothesCard({
     Key key,
-  //  this.image,
+    //  this.image,
     this.title,
     this.press,
   }) : super(key: key);

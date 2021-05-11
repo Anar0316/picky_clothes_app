@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'constants.dart';
-import 'detail_screen.dart';
+import 'package:picky_clothes_app/Details/DetailPage.dart';
+import '../constants.dart';
 
-class Sweater extends StatelessWidget {
-  const Sweater({
+class Cashmere extends StatelessWidget {
+  const Cashmere({
     Key key,
   }) : super(key: key);
 
@@ -19,7 +19,7 @@ class Sweater extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => DetailsScreen(),
+                  builder: (context) => DetailPage(),
                 ),
               );
             },
@@ -30,10 +30,10 @@ class Sweater extends StatelessWidget {
   }
 }
 
-class ClothesCard extends StatelessWidget {
-  const ClothesCard({
+class  ClothesCard extends StatelessWidget {
+  const  ClothesCard({
     Key key,
-    //  this.image,
+  //  this.image,
     this.title,
     this.press,
   }) : super(key: key);

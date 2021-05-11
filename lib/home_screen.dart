@@ -2,7 +2,7 @@ import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:picky_clothes_app/NawBar.dart';
+import 'file:///D:/Anar/picky_clothes_app/lib/Components/NawBar.dart';
 import 'package:picky_clothes_app/body.dart';
 
 
