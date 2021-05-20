@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:picky_clothes_app/Details/DetailPage.dart';
 import '../constants.dart';
+import 'package:disk_space/disk_space.dart';
 
 class Cashmere extends StatelessWidget {
   const Cashmere({

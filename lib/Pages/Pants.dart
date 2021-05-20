@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../constants.dart';
 import '../Components/detail_screen.dart';
+import 'package:disk_space/disk_space.dart';
 
 class Pants extends StatelessWidget {
   const Pants({
