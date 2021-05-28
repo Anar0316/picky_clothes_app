@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:disk_space/disk_space.dart';
 
-class DetailPage extends StatefulWidget {
+class DetailCashmere extends StatefulWidget {
   @override
-  _DetailPageState createState() => _DetailPageState();
+  _DetailCashmereState createState() => _DetailCashmereState();
 }
 
-class _DetailPageState extends State<DetailPage> {
+class _DetailCashmereState extends State<DetailCashmere> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +25,7 @@ class _DetailPageState extends State<DetailPage> {
             height: size.height * 0.5,
             decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage("assets/images/image_detail.png"),
+                  image: AssetImage("assets/images/Cashmere1.png"),
                   fit: BoxFit.cover),
             ),
             child: SafeArea(
@@ -80,45 +79,11 @@ class _DetailPageState extends State<DetailPage> {
                     height: 20,
                   ),
                   Text(
-                    "How to clean your fancy cashmere",
+                    "The Best Way to Wash Wool and Cashmere Sweaters",
                     style: TextStyle(fontSize: 20, height: 1.5),
                   ),
                   SizedBox(
                     height: 20,
-                  ),
-                  Row(
-                    children: <Widget>[
-                      Container(
-                        width: 40,
-                        height: 40,
-                        decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            image: DecorationImage(
-                                image: NetworkImage(
-                                    "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"),
-                                fit: BoxFit.cover)),
-                      ),
-                      SizedBox(
-                        width: 20,
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          Text(
-                            "Jean-Luis",
-                            style: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.bold),
-                          ),
-                          SizedBox(
-                            height: 3,
-                          ),
-                          Text(
-                            "Japanese cleaning lady",
-                            style: TextStyle(fontSize: 13),
-                          )
-                        ],
-                      )
-                    ],
                   ),
                   SizedBox(height: 20,),
                   Row(
@@ -128,13 +93,14 @@ class _DetailPageState extends State<DetailPage> {
                             border: Border.all(color: Colors.grey),
                             borderRadius: BorderRadius.circular(3)),
                         child: Padding(
-                          padding: const EdgeInsets.all(6.0),
-                          child: Text("Interior"),
+                          padding: const EdgeInsets.all(10.0),
+                        ),
+                        image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: NetworkImage("https://picsum.photos/250?image=9"),
                         ),
                       ),
-                      SizedBox(
-                        width: 20,
-                      ),
+                      SizedBox(height: 20,),
                       Container(
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.grey),
@@ -159,7 +125,8 @@ class _DetailPageState extends State<DetailPage> {
                     ],
                   ),
                   SizedBox(height: 20,),
-                  Text("Nobody wants to stare at a blank wall all day long, which is why wall art is such a crucial step in the decorating process. And once you start brainstorming, the rest is easy. From gallery walls to DIY pieces like framing your accessories and large-scale photography, we've got plenty of wall art ideas to spark your creativity. And where better to look for inspiration that interior designer-decorated walls",style: TextStyle(
+                  Text("To help you understand why it's possible to wash wool and cashmere at home, you must first understanding the fabric. All animals in the wool family, whether sheep, alpaca, mohair, lamb, merino, or camel use the same cleaning process, says Whiting. Her advice: It's always safer to hand wash. Fill a sink, tub, or basin with tepid water and add a squirt of a cleanser that's specially formulated for wool, like The Laundress Wool and Cashmere Shampoo. Don't have any on hand? The alternative is a good hair shampoo, because wool and cashmere is hair, she says. Next, submerge your sweater in the bath. Gently swirl it around for about 30 seconds, and let it soak for up to 30 minutes. Drain the dirty water and rinse with cool, clean water. Next comes the most crucial step: Avoid that gut reaction to wring it,stresses the expert. Wringing manipulates the fibers, and when the yarns are wet, they're weaker. You might end up disfiguring your sweater.Instead, gently remove the water by pressing your sweater into a ball (think: pizza dough). You can even press the ball into the side of the sink or your work surface.",
+                      style: TextStyle(
                       height: 1.6
                   ),),
                   SizedBox(height: 20,)

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:picky_clothes_app/Details/DetailPage.dart';
+import 'package:picky_clothes_app/Details/Detail_Cashmere.dart';
 import '../constants.dart';
-import 'package:disk_space/disk_space.dart';
 
 class Cashmere extends StatelessWidget {
   const Cashmere({
@@ -15,12 +14,12 @@ class Cashmere extends StatelessWidget {
       child: Row(
         children: <Widget>[
           ClothesCard(
-            title: "How to clean the material",
+            title: "How to clean Cashmere",
             press: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => DetailPage(),
+                  builder: (context) => DetailCashmere(),
                 ),
               );
             },

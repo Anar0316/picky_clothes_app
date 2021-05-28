@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:disk_space/disk_space.dart';
+
 // Colors that we use in our app
 const kPrimaryColor = Color(0xFFEF9A9A);
 const kTextColor = Color(0xFF3C4046);

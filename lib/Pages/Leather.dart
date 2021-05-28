@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:picky_clothes_app/Details/Detail_Leather.dart';
 import '../constants.dart';
 import '../Components/detail_screen.dart';
-import 'package:disk_space/disk_space.dart';
 
 class Leather extends StatelessWidget {
   const Leather({
@@ -20,7 +20,7 @@ class Leather extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => DetailsScreen(),
+                  builder: (context) => DetailLeather(),
                 ),
               );
             },

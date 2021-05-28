@@ -12,8 +12,8 @@ class NavBar extends StatelessWidget {
             accountName: Text('Menu', style: TextStyle(fontWeight: FontWeight.bold),),
             currentAccountPicture: CircleAvatar(
               child: ClipOval(
-                child: Image.network(
-                  'https://oflutter.com/wp-content/uploads/2021/02/girl-profile.png',
+                child: Image.asset(
+                 'assets/icons/logo.jpg',
                   fit: BoxFit.cover,
                   width: 90,
                   height: 90,

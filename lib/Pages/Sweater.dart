@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:picky_clothes_app/Details/Detail_Sweater.dart';
 import '../constants.dart';
 import '../Components/detail_screen.dart';
-import 'package:disk_space/disk_space.dart';
 
 class Sweater extends StatelessWidget {
   const Sweater({
@@ -20,7 +20,7 @@ class Sweater extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => DetailsScreen(),
+                  builder: (context) => DetailSweater(),
                 ),
               );
             },

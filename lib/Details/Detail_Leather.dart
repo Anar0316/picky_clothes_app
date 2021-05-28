@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:disk_space/disk_space.dart';
 
-class DetailPage extends StatefulWidget {
+
+class DetailLeather extends StatefulWidget {
   @override
-  _DetailPageState createState() => _DetailPageState();
+  _DetailLeatherState createState() => _DetailLeatherState();
 }
 
-class _DetailPageState extends State<DetailPage> {
+class _DetailLeatherState extends State<DetailLeather> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +26,7 @@ class _DetailPageState extends State<DetailPage> {
               height: size.height * 0.5,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage("assets/images/image_detail.png"),
+                    image: AssetImage("assets/images/Leather_adobespark.jpg"),
                     fit: BoxFit.cover),
               ),
               child: SafeArea(
