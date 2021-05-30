@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:picky_clothes_app/Details/Detail_Cashmere.dart';
+import 'package:picky_clothes_app/Details/Detail_Leather.dart';
+import 'package:picky_clothes_app/Details/Detail_Pants.dart';
+import 'package:picky_clothes_app/Details/Detail_Sweater.dart';
 
 class NavBar extends StatelessWidget {
   @override
@@ -9,14 +13,14 @@ class NavBar extends StatelessWidget {
         padding: EdgeInsets.zero,
         children: [
           UserAccountsDrawerHeader(
-            accountName: Text('Menu', style: TextStyle(fontWeight: FontWeight.bold),),
+            accountName: Text('Menu', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
             currentAccountPicture: CircleAvatar(
               child: ClipOval(
                 child: Image.asset(
                  'assets/icons/logo.jpg',
                   fit: BoxFit.cover,
-                  width: 90,
-                  height: 90,
+                  width: 100,
+                  height: 100,
                 ),
               ),
             ),
@@ -29,22 +33,44 @@ class NavBar extends StatelessWidget {
             ),
           ),
           ListTile(
-            title: Text('Sweater'),
-            onTap: () => null,
+            leading: Icon(Icons.chevron_right_rounded),
+            title: Text('Sweater', style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (BuildContext context) => DetailSweater()),
+              );
+            },
           ),
           ListTile(
-            leading: Icon(Icons.person),
-            title: Text('Leather'),
-            onTap: () => null,
+            leading: Icon(Icons.chevron_right_rounded),
+            title: Text('Leather', style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (BuildContext context) => DetailLeather()),
+              );
+            },
           ),
           ListTile(
-            leading: Icon(Icons.share),
-            title: Text('Pants'),
-            onTap: () => null,
+            leading: Icon(Icons.chevron_right_rounded),
+            title: Text('Pants', style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (BuildContext context) => DetailPants()),
+              );
+            },
           ),
           ListTile(
-            leading: Icon(Icons.notifications),
-            title: Text('Cashmere'),
+            leading: Icon(Icons.chevron_right_rounded),
+            title: Text('Cashmere', style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (BuildContext context) => DetailCashmere()),
+              );
+            },
           ),
         ],
       ),

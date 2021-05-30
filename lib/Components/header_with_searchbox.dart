@@ -40,7 +40,7 @@ class HeaderWithSearchBox extends StatelessWidget {
                       color: Colors.white, fontWeight: FontWeight.bold),
                 ),
                 Spacer(),
-                Image.asset("assets/images/logo.png")
+                Image.asset("assets/images/circle-cropped.png")
               ],
             ),
           ),
@@ -72,21 +72,22 @@ class HeaderWithSearchBox extends StatelessWidget {
                       decoration: InputDecoration(
                         hintText: "Search",
                         hintStyle: TextStyle(
-                          color: kPrimaryColor.withOpacity(0.5),
+                          color: kPrimaryColor.withOpacity(0.7),
                         ),
                         enabledBorder: InputBorder.none,
                         focusedBorder: InputBorder.none,
                         // surffix isn't working properly  with SVG
                         // thats why we use row
                         // suffixIcon: SvgPicture.asset("assets/icons/search.svg"),
+
                       ),
                     ),
                   ),
-                  SvgPicture.asset("assets/icons/search.svg"),
-                ],
+                  SvgPicture.asset("assets/icons/iconmonstr-search-thin.svg"),
+                    ],
+                  ),
               ),
             ),
-          ),
         ],
       ),
     );
