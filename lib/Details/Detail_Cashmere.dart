@@ -40,14 +40,6 @@ class _DetailCashmereState extends State<DetailCashmere> {
                         Navigator.pop(context);
                       },
                       child: SvgPicture.asset("assets/images/back_icon.svg")),
-                  Row(
-                    children: <Widget>[
-                      SvgPicture.asset("assets/images/heart_icon.svg"),
-                      SizedBox(
-                        width: 20,
-                      ),
-                    ],
-                  )
                 ],
               ),
             ),
@@ -89,38 +81,47 @@ class _DetailCashmereState extends State<DetailCashmere> {
                   Row(
                     children: <Widget>[
                       Container(
+                        height: 50.0,
+                        width: 60.0,
+                        padding: const EdgeInsets.all(10.0),
                         decoration: BoxDecoration(
-                            border: Border.all(color: Colors.grey),
-                            borderRadius: BorderRadius.circular(3)),
-                        child: Padding(
-                          padding: const EdgeInsets.all(6.0),
-                          child: Text("Interior"),
+                          border: Border.all(color: Colors.grey, width: 2),
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                        child: SvgPicture.asset(
+                            'assets/icons/washing-temperature.svg'
                         ),
                       ),
                       SizedBox(
                         width: 20,
                       ),
                       Container(
+                        height: 50.0,
+                        width: 60.0,
+                        padding: const EdgeInsets.all(10.0),
                         decoration: BoxDecoration(
-                            border: Border.all(color: Colors.grey),
-                            borderRadius: BorderRadius.circular(3)),
-                        child: Padding(
-                          padding: const EdgeInsets.all(6.0),
-                          child: Text("40m2"),
+                          border: Border.all(color: Colors.grey, width: 2),
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                        child: SvgPicture.asset(
+                            'assets/icons/icon_2.svg'
                         ),
                       ),
                       SizedBox(
                         width: 20,
                       ),
                       Container(
+                        height: 50.0,
+                        width: 60.0,
+                        padding: const EdgeInsets.all(10.0),
                         decoration: BoxDecoration(
-                            border: Border.all(color: Colors.grey),
-                            borderRadius: BorderRadius.circular(3)),
-                        child: Padding(
-                          padding: const EdgeInsets.all(6.0),
-                          child: Text("Ideas"),
+                          border: Border.all(color: Colors.grey, width: 2),
+                          borderRadius: BorderRadius.circular(10.0),
                         ),
-                      )
+                        child: SvgPicture.asset(
+                            'assets/icons/hand-wash.svg'
+                        ),
+                      ),
                     ],
                   ),
                   SizedBox(

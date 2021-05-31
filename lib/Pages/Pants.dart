@@ -16,7 +16,7 @@ class Pants extends StatelessWidget {
       child: Row(
         children: <Widget>[
           ClothesCard(
-            title: "How to clean the material",
+            title: "How to Wash & Care for Khaki Pants",
             press: () {
               Navigator.push(
                 context,
@@ -52,7 +52,7 @@ class ClothesCard extends StatelessWidget {
         top: kDefaultPadding / 2,
         bottom: kDefaultPadding * 2.5,
       ),
-      width: size.width * 0.4,
+      width: size.width * 0.6,
       child: Column(
         children: <Widget>[
           GestureDetector(

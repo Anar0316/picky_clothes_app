@@ -14,7 +14,8 @@ class Cashmere extends StatelessWidget {
       child: Row(
         children: <Widget>[
           ClothesCard(
-            title: "How to clean Cashmere",
+            title: "The Best Way to wash Cashmere",
+            style: TextStyle(fontSize: 20, height: 1.5, fontWeight: FontWeight.bold),
             press: () {
               Navigator.push(
                 context,
@@ -35,7 +36,7 @@ class  ClothesCard extends StatelessWidget {
     Key key,
   //  this.image,
     this.title,
-    this.press,
+    this.press, TextStyle style,
   }) : super(key: key);
 
   final String title;
@@ -50,7 +51,7 @@ class  ClothesCard extends StatelessWidget {
         top: kDefaultPadding / 2,
         bottom: kDefaultPadding * 2.5,
       ),
-      width: size.width * 0.4,
+      width: size.width * 0.6,
       child: Column(
         children: <Widget>[
           GestureDetector(
